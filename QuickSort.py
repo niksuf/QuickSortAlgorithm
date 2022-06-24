@@ -12,8 +12,9 @@ def printArray(array, size):                                # Вывод мас�
         print('Sorted!')
     else:
         print('Unsorted!')
-    for i in range (0, 10):
-            print(array[i], end = '\n')
+    for i in range (0, size):
+        if i < 10: print(array[i], end = '\n')
+        else: break
     print('\n')
 
 def sort(array, start, end):                                # Сортировка массива
